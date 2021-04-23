@@ -1,19 +1,25 @@
 <html>
     <head>
+    <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal"><br/>
-        Rate <input type="range"  id="rate" min="0.0" max="100.0" onchange="updateTextInput(this.value);"><br/>
-        <span id="rangeInput"></span><br>
-        No. of Years <input type="number"  id="years"><br/>
-        <button onclick="compute()">Compute</button>
-        <span id="pr"></span><br>
-        <span id="r"></span><br>
-        <span id="result"></span><br>
-        <span id="yr"></span><br>
+        <div class="container">
+            <div class="content">
+                <h1>Simple Interest Calculator</h1>
+                Amount <input type="number"  id="principal"><br/>
+                Rate <input type="range"  id="rate" min="0.00" max="100.00" step="0.1" onchange="updateTextInput(this.value);"><br/>
+                <p id="rangeInput"></p><br>
+                No. of Years <input type="number"  id="years"><br/>
+                <button onclick="compute()">Compute</button><br/>
+                <div class="details">
+                    <span id="pr"></span><br>
+                    <span id="r"></span><br>
+                    <span id="result"></span><br>
+                    <span id="yr"></span><br>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
