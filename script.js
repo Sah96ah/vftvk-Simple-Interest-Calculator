@@ -13,4 +13,6 @@ function compute()
     document.getElementById("result").innerHTML = "You will recieve an amount of "+i;
     document.getElementById("yr").innerHTML = "in the year "+yt;
 }
-        
+function updateTextInput(val) {
+          document.getElementById('rangeInput').value=val; 
+}        
