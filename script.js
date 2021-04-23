@@ -4,7 +4,7 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
 
-    var i = p*parseFloat(r)*y;
+    var i = (p*parseFloat(r)*y)/100;
     var dt = new Date();
     var yt = parseInt(dt.getFullYear())+parseInt(y);
     
