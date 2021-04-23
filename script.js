@@ -14,5 +14,5 @@ function compute()
     document.getElementById("yr").innerHTML = "in the year "+yt;
 }
 function updateTextInput(val) {
-          document.getElementById('rangeInput').value=val; 
+          document.getElementById('rangeInput')..innerHTML = val; 
 }        
